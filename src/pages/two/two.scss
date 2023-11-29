@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "~normalize.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #e5e5e5;
+	display: flex;
+	padding-top: 5rem;
+	justify-content: center;
+	overflow: hidden;
+	margin: 0;
+}
+
+.row {
+	display: flex;
+	width: 600px;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.col-header {
+	width: 150px;
+	box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+	border-radius: 20px;
+	padding: 0.8rem 1rem;
+	color: #fff;
+}
+
+.item {
+	width: 150px;
+	height: 66px;
+	border: 1px solid rgb(255, 0, 0);
+	box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+	border-radius: 20px;
+	background: #934f93;
+	padding: 0.8rem 1rem;
+	color: #828282;
+	text-align: center;
+	cursor: grab;
+}
+
+.item:active {
+	cursor: grabbing;
+}
+
+.placeholder {
+	width: 150px;
+	height: 66px;
+}
+
+.start {
+	background: linear-gradient(90deg, #000000 0%, #ee22fd 179.25%);
+}
+
+.progress {
+	background: linear-gradient(90deg, #000000 0%, #68e0cf 100%);
+}
+
+.done {
+	background: linear-gradient(90deg, #060606 0%, #8fd3f4 100%);
+}
+
+.hold {
+	border: 3px solid palevioletred;
+	backdrop-filter: blur(5px);
+	background: #68e0cf;
+	color: darkorange;
+}
+
+.hide {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.hovered {
+	border-top: 2px solid rgba(107, 0, 147, 0.74);
+	box-shadow: 1px 5px 3px 1px #828282;
+	transition: 0.5s all ease-in-out;
+}
+
+.link {
+	font-size: 32px;
+	top: 0;
+	left: 0;
+	color: rgb(6, 6, 6);
+	z-index: 100;
+	position: absolute;
+}

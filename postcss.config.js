@@ -1,5 +1,19 @@
+const autoprefixer = require('autoprefixer');
+const postcssPresetEnv = require('postcss-preset-env');
+const postcssSass = require('@csstools/postcss-sass');
+
 module.exports = {
-  // Add you postcss configuration here
-  // Learn more about it at https://github.com/webpack-contrib/postcss-loader#config-files
-  plugins: [["autoprefixer"]],
+  syntax: require('postcss-scss'),
+  plugins: [
+    autoprefixer,
+    postcssPresetEnv({
+      stage: 0,
+      features: {
+        'custom-properties': {
+          preserve: true,
+        },
+      },
+    }),
+    postcssSass,
+  ],
 };

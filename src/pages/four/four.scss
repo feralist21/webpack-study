@@ -1,0 +1,47 @@
+@import "~normalize.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1240px;
+	height: 500px;
+	flex-wrap: wrap;
+
+
+	.square {
+		width: 16px;
+		height: 16px;
+		background: #1d1d1d1d;
+		margin: 2px;
+		box-shadow: 0 0 2px #000;
+		transition: 0.5s ease;
+	}
+
+	.square:hover {
+		transition-duration: 0s;
+	}
+}
+
+.link {
+	font-size: 32px;
+	top: 0;
+	left: 0;
+	color: rgb(255, 255, 255);
+	z-index: 100;
+	position: absolute;
+}
